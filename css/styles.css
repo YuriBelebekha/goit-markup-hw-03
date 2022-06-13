@@ -1,0 +1,246 @@
+:root {
+  --primary-font-family: 'Roboto', sans-serif;
+  --main-logo-font-family: 'Raleway', sans-serif;
+
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;  
+  --accent-color: #2196F3;
+  --btn-color-hover: #188CE8;
+  --primary-white-color: #ffffff;
+  --primary-bg-color: #2F303A;
+  --secondary-bg-color: #F5F4FA;
+  --logo-black-color: #000000;
+  --border-color: #EEEEEE;
+  --opacity-text-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----- START - COMMON STYLES ----- */
+
+body {  
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+
+  background-color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;  
+}
+
+/* ===== END - COMMON STYLES ===== */
+
+/* ----- START - COMPONENTS ----- */
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== END - COMPONENTS ===== */
+
+/* ----- START - HEADER ----- */
+
+.logo {  
+  font-family: var(--main-logo-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-black-color);  
+}
+
+.logo-decor {
+  color: var(--accent-color);     
+}
+
+.menu-nav .link,
+.menu-contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);  
+}
+
+.menu-nav .link {
+  color: var(--primary-text-color);
+}
+
+.menu-contacts .link {
+  color: var(--secondary-text-color);
+}
+
+.menu-nav .link.current,
+.menu-nav .link:hover, 
+.menu-nav .link:focus,
+.menu-contacts .link:hover,
+.menu-contacts .link:focus {
+  color: var(--accent-color);  
+}
+
+/* ===== END - HEADER ===== */
+
+/* ----- START - HERO ----- */
+.hero {
+  background-color: var(--primary-bg-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-btn {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover, 
+.hero-btn:focus {
+  background-color: var(--btn-color-hover);
+}
+
+/* ===== END - HERO ===== */
+
+/* ----- START - FEATURES ----- */
+
+.feature-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* ===== END - FEATURES ===== */
+
+/* ----- START - STAFF ----- */
+
+.staff {
+  background-color: var(--secondary-bg-color);
+}
+
+.list-item {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;  
+}
+
+.staff-name,
+.staff-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.staff-name {
+  font-weight: 500;  
+}
+
+.staff-position {  
+  color: var(--secondary-text-color);
+}
+
+/* ===== END - STAFF ===== */
+
+/* ----- START - FOOTER ----- */
+
+.page-footer {
+  background-color: var(--primary-bg-color);
+}
+
+.page-footer .logo {  
+  color: var(--primary-white-color);
+}
+
+.contact-list .link {  
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;  
+  color: var(--opacity-text-color);  
+}
+
+.contact-list .link:hover, 
+.contact-list .link:focus {
+  color: var(--accent-color);  
+}
+
+.contact-list .opacity-link {
+  color: var(--primary-white-color);
+}
+
+/* ===== END - FOOTER ===== */
+
+/* ----- START - PORTFOLIO ----- */
+
+.filter-btn {
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;  
+
+  background-color: var(--secondary-bg-color);
+  border: none;
+  border-radius: 4px;  
+}
+
+.button.current,
+.filter-btn:hover, 
+.filter-btn:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);    
+}
+
+.project-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.project-category {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.project-card {
+  background-color: var(--primary-white-color);  
+}
+
+/* ===== END - PORTFOLIO ===== */
